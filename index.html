@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,56 +7,60 @@
     <title>CV</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="style.css">
- 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body>
     <main class="main-content">
         <section class="left-section">
             <div class="left-content">
-                <div class="profile">
-                    <div class="image">
-                        <img src="avata.jpg" alt="">
+                <!-- profile-->
+                    <div class="profile">
+                        <div class="image">
+                            <img src="avata.jpg" alt="">
+                        </div>
+                        <h2 class="name" id="fname"></h2>
+                        <p class="career" id="position"></p>
                     </div>
-                    <h2 class="name">Nguyen Luong</h2>
-                    <p class="career">TRN.Fresher</p>
-                </div>
+
+                <!-- info-->
 
                 <div class="references-section">
-                    <h3 class="main-title">Personal Information</h3>
-                    <div class="referee">
-                        <ul>
-                            <li>
-                                <i class="fa fa-phone"></i>
-                                07661892982
-                            </li>
-                            <li>
-                                <i class="fa fa-fax"></i>
-                                11/11/2000
-                            </li>
-                            <li>
-                                <i class="fa fa-fax"></i>
-                                Vinh University
-                            </li>
-                           
-                            <li>
-                                <i class="fa fa-fax"></i>
-                                Hoang Mai, Nghe An
-                            </li>
-                            
-                        </ul>
-                    </div>
-                    
-                </div>
+                    <h3 class="main-title">Personal Information</h3>  
+                    <div class="contact-info">
+                        <h3 class="main-title">Contact Info</h3>
+                        <div class="references-section">      
+                            <div class="referee">
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-birthday-cake"></i>
+                                        <p id="birthday"></p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-graduation-cap"></i>
+                                         <p id="graduate"></p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-fax"></i>
+                                        Vinh University
+                                    </li>
+                                   
+                                    <li>
+                                        <i class="fa fa-map-marker"></i>
+                                        Hoang Mai, Nghe An
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                    </div>     
+                </div>    
             </div>
         </section>
+
+        <!-- right section-->
         <section class="right-section">
             <div class="right-main-content">
-
-
                 <section class="experince sect">
                     <h2 class="right-title">Experinces</h2>
                     <div class="timeline">
@@ -75,8 +78,7 @@
                                 <p class="para">
                                     Learn JAVASCRIPT programming from basic to advanced. Learn Servlet and JDBC, JAVA basic, Framework
                                 </p>
-                                <br>
-                                
+                                <br>  
                             </div>
                         </div>
                     </div>
@@ -87,31 +89,159 @@
                         </div>
                         <div class="right-tl-content">
                             <div class="tl-content">
-                                <h5 class="tl-title-2">Train fresher</h5>
-                                
+                                <h5 class="tl-title-2">Train fresher</h5>   
                             </div>
                         </div>
-                    </div>
-                    
+                    </div>    
                 </section>
 
-                <div class="box">
-                    <h4> SKILL</h4>
-                    <br>
-                    <button class="button button1">HTML/CSS</button>
-                    <button class="button button2">BOOTSTRAP</button>
-                    <button class="button button3">JAVASCRIPT</button>
-                    <button class="button button4">NODEJS</button>
-                  
-                 </div>
+                <!-- skill-->
+                <div>
 
+                    <h1>My Skills</h1>
+                    <p> <br></p>
+                    <p>HTML/CSS</p>
+                    <div class="container">
+                    <div class="skills html">90%</div>
+                    </div>
+                    <p>JAVA</p>
+                    <div class="container">
+                    <div class="skills css">80%</div>
+                    </div>
+                    <p>JavaScript</p>
+                    <div class="container">
+                    <div class="skills js">70%</div>
+                    </div>
+                    <p>PHP</p>
+                    <div class="container">
+                    <div class="skills php">70%</div>
+                    </div>
+                </div>     
+            </div>
+        </section>
+
+        <!-- section api-->
+
+        <section class="api-section">
+            <div class="api-content">
+                <div class="contact-info">
+                    <h3 class="main-title">Contact Info</h3>
+                    <div class="references-section">     
+                        <div class="referee">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    07661892982
+                                </li>
+                                <li>
+                                    <i class="fa fa-fax"></i>
+                                    11/11/2000
+                                </li>
+                                <li>
+                                    <i class="fa fa-fax"></i>
+                                    Vinh University
+                                </li>
+                                <li>
+                                    <i class="fa fa-fax"></i>
+                                    Hoang Mai, Nghe An
+                                </li>  
+                            </ul>
+                        </div>   
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <form id="myForm">
+                        <input type="text" id="name" name="name" placeholder="Your company name..">
+                        <input type="text" id="email" name="email" placeholder="Email..">
+                        <input type="text" id="address" name="address">
+                        <button type="submit" id="submit" name="submit" class="submit"> Gửi</button>
+                    </form>
+
+                    <div id="response">
+                        <pre></pre>
+                    </div>
+                </div>
             </div>
         </section>
        
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        (function($){
+            function processForm( e ){
+                $.ajax({
+                    url: 'http://62b8196d03c36cb9b7c1cd68.mockapi.io/api/hr_info/',
+                    dataType: 'text',
+                    type: 'post',
+                    contentType: 'application/x-www-form-urlencoded',
+                    data: $(this).serialize(),
+                    success: function( data, textStatus, jQxhr ){
+                        $('#response pre').html( "Xin cảm ơn" );
+                        clearField();
+                    },
+                    error: function( jqXhr, textStatus, errorThrown ){
+                        $('#response pre').html( "Thất bại" );
+                    }
+                });
 
-   
+                e.preventDefault();
+            }
+            function clearField(){
+                $('#name').val("");
+                $('#email').val("");
+                $('#address').val("");
+            }
+    
+            $('#myForm').submit( processForm );
+        })(jQuery);
 
+         $(document).ready(function () {
+            loadData();
+        });
+      
+
+    </script>
+     <script>
+        $(document).ready(function () {
+            loadData();
+        });
+
+        function loadData() {
+            $.ajax({
+                dataType: 'json',
+                url: "http://62b8196d03c36cb9b7c1cd68.mockapi.io/api/hoang_info/",
+                type: 'GET',
+                            
+                 success: function (datas) {
+                    console.log(datas[0].name)
+                    $('#fname').html(datas[0].name)
+                    $('#position').html(datas[0].position)
+                    $('#birthday').html(datas[0].dateofbirth)
+                    $('#graduate').html(datas[0].graduatedAt)
+                 }
+                });
+            
+        }
+
+        function loadData() {
+            $.ajax({
+                dataType: 'json',
+                url: "http://62b8196d03c36cb9b7c1cd68.mockapi.io/api/luong_info/",
+                type: 'GET',
+                            
+                 success: function (datas) {
+                    console.log(datas[0].name)
+                    $('#fname').html(datas[0].name)
+                    $('#position').html(datas[0].position)
+                    $('#birthday').html(datas[0].dateofbirth)
+                    $('#graduate').html(datas[0].graduatedAt)
+                 }
+                });
+            
+        }
+  
+    </script>
 </body>
-
 </html>
